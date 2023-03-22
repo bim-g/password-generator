@@ -1,0 +1,24 @@
+{
+    "name": "wepesi/password-generator",
+    "description": "generate strong password, salt and hash",
+    "type": "library",
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "Wepesi\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bim-g",
+            "email": "ibmussafb@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "homepage": "https://github.com/bim-g/password-generator",
+    "keywords": ["password","hash","random password","salt"],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : "^7.4||8.0"
+    }
+}
