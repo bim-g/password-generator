@@ -1,13 +1,8 @@
-# PASSWORD_GENERATOR
-auto generate password, salt and hash.
+<?php
 
-# Installation
-```bash
-composer require password-generator
-```
+include __DIR__.'/../vendor/autoload.php';
+use Wepesi\App\PasswordGenerator;
 
-# Integration
-```php
 $simple_string = PasswordGenerator::randomString();
 $strong_string = PasswordGenerator::randomString(10,true);
 
@@ -27,4 +22,3 @@ echo $simple_string_no_salt . PHP_EOL;
 $simple_string_salt = PasswordGenerator::make($simple_string,$salt);
 echo $simple_string_salt . PHP_EOL;
 // eg: 8553b800cd2dcd2646c7535e8675c7892872edf508440e268c9017fd15dbc93a
-```
